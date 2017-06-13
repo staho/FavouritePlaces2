@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FavouritePlaces</string>
+    <string name="google_maps_api_key">AIzaSyAgyykmqL6KBwyMwOgBmocjE38O90v9818</string>
+    <string name="preference_file_key">xd_jebac_platki_sniadaniowe_xml</string>
+    <string name="json_string_prefs_name">jsonString2</string>
+    <string name="mapType">Typ mapy</string>
+    <string name="hybrid">Hybrid</string>
+    <string name="normal">Normal</string>
+    <string name="satellite">Satellite</string>
+    <string name="terrain">Terrain</string>
+</resources>
