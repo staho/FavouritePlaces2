@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
         String json = sharedPref.getString(getString(R.string.json_string_prefs_name), "");
 
-        if(!json.equals("") || !json.equals("null")) {
+        if(!json.equals("") && !json.equals("null")) {
             Gson gson = new Gson();
 
             Type collectionType = new TypeToken<Collection<MarkerClass>>() {}.getType();
