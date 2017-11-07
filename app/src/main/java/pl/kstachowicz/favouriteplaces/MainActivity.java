@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         sharedPref = getApplicationContext().getSharedPreferences(
                 getString(R.string.preference_file_key), Context.MODE_PRIVATE);
 
-        String json = sharedPref.getString(getString(R.string.json_string_prefs_name), "");
+        String json = sharedPref.getString(getString(R.string.json_string_prefs_name), "null");
 
         if(!json.equals("") && !json.equals("null")) {
             Gson gson = new Gson();
@@ -241,11 +241,11 @@ public class MainActivity extends AppCompatActivity {
     }
     private void moveToCurrentLocation(LatLng currentLocation)
     {
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(currentLocation,5));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(currentLocation,10));
         // Zoom in, animating the camera.
         mMap.animateCamera(CameraUpdateFactory.zoomIn());
         // Zoom out to zoom level 10, animating with a duration of 2 seconds.
-        mMap.animateCamera(CameraUpdateFactory.zoomTo(5), 500, null);
+        mMap.animateCamera(CameraUpdateFactory.zoomTo(10), 500, null);
 
 
     }
